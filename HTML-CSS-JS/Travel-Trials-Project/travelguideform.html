@@ -1,0 +1,43 @@
+<!DOCTYPEHTML>
+<html>
+<head>
+<style>
+.blue{
+cursor:pointer;
+}
+</style>
+</head>
+<body bgcolor=purple>
+<font color="white" >
+<h1>
+TYPE PERSONAL DETAILS HERE
+</h1>
+</font>
+
+<form method="post" action="travelguide2.html" target="_top">
+
+<font color="white">
+<h2>
+Name:<input type="text" name="name" placeholder="NAME" size=20><br><br>
+SURNAME:<input type="text" name="surname" placeholder="SURNAME" size=20 ><br><br>
+Number Of People Travelling<br>
+1<input class="blue" type=radio><br>
+2<input class="blue" type=radio><br>
+3<input class="blue" type=radio><br>
+4<input class="blue" type=radio><br>
+MORE THAN 4:<input type=radio class="blue"><input type=text placeholder="ENTER NUMBER"><br>
+
+<input class="blue" type=submit name="s" value="Submit" onclick="aler()">
+
+<input class="blue" type=reset>
+</font>
+</form>
+<script>
+    function aler() 
+    {
+       alert("ARE YOU SURE YOUR DETAILS ARE RIGHT");
+    }
+</script>
+
+</body>
+</html>
