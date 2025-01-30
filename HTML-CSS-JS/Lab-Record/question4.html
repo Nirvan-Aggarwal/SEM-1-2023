@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2D Graphics with Canvas</title>
+</head>
+<body>
+    <h1>2D Graphics with Canvas</h1>
+
+    <canvas id="myCanvas" width="400" height="400" style="border: 1px solid black;"></canvas>
+
+    <script>
+        // Get the canvas element and its 2D rendering context
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Draw a red rectangle
+        ctx.fillStyle = "red";
+        ctx.fillRect(50, 50, 100, 100);
+
+        // Draw a blue circle
+        ctx.beginPath();
+        ctx.arc(250, 150, 50, 0, Math.PI * 2);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+
+        // Draw a green line
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.moveTo(50, 250);
+        ctx.lineTo(350, 250);
+        ctx.stroke();
+
+        // Draw text
+        ctx.font = "24px Arial";
+        ctx.fillStyle = "black";
+        ctx.fillText("Hello, Canvas!", 100, 350);
+    </script>
+</body>
+</html>
